@@ -1,0 +1,27 @@
+package com.shankar.TextAdventure;
+
+public enum Commands {
+	MOVE_SOUTH,
+	MOVE_NORTH,
+	MOVE_WEST,
+	MOVE_EAST,
+	
+	LOOK_EAST,
+	LOOK_WEST,
+	LOOK_SOUTH,
+	LOOK_NORTH,
+	
+	EXAMINE_ITEM,
+	EXAMINE_ROOM,
+	EXAMINE_SELF,
+	
+	TAKE_ITEM,
+	DROP_ITEM,
+	USE_ITEM,
+	
+	ATTACK,
+	RUN,
+	BATTLE,
+	
+
+}
