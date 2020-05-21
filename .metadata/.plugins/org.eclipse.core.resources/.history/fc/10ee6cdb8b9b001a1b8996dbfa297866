@@ -1,0 +1,26 @@
+package com.shankar.TextAdventure;
+
+public class Level {
+	void test()
+	{
+		IO io = new Console();
+		Room first = new Room(io, "first room");
+		Room firstn = new Room(io, "north of first room");
+		Room firsts = new Room(io, "south of first room");
+		Room firste = new Room(io);
+		Room second = new Room(io);
+		Room seconds = new Room(io);
+		Room secondw = new Room(io);
+		
+		first.addNorthExit(firstn);
+		first.addSouthExit(firsts);
+		first.addEastExit(firste);
+		first.addWestExit(second);
+		second.addEastExit(first);
+		second.addSouthExit(seconds);
+		second.addWestExit(secondw);
+	}
+	
+
+
+}

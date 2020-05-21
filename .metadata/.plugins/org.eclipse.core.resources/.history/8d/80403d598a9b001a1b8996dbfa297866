@@ -1,0 +1,31 @@
+package com.shankar.TextAdventure;
+
+public class Level {
+	Room currentRoom;
+	Room start;
+	IO io;
+	Level(IO io)
+	{
+		this.io = io;
+		start = new Room(io, currentRoom);
+		currentRoom = start;
+	}
+	void test()
+	{
+		Room r1 = new Room(this.io, this.currentRoom);
+		Room r2 = new Room(this.io, this.currentRoom);
+		r2.id = "sh";
+		r1.addSouthExit(r2);
+		currentRoom.displayExits();
+		start.addEastExit(r1);
+		start.move("east");
+		currentRoom.displayExits();
+		io.print(currentRoom.id);
+	}
+	public static void main(String args[])
+	{
+		Level l = new Level(new Console());
+		l.test();
+	}
+
+}

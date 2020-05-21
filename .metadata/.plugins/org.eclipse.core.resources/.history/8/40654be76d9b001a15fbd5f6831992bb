@@ -1,0 +1,12 @@
+package com.shankar.TextAdventure;
+
+public class Level {
+	Room currentRoom;
+	Room start;
+	IO io;
+	Level(IO io)
+	{
+		this.io = io;
+	}
+
+}
