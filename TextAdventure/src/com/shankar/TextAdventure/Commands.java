@@ -23,5 +23,11 @@ public enum Commands {
 	RUN,
 	BATTLE,
 	
+	NOT_UNDERSTOOD,
+	WHAT_TO_TAKE,
+	WHAT_TO_EXAMINE,
+	WHAT_TO_DROP,
+	WHERE_TO_GO,
+	
 
 }
